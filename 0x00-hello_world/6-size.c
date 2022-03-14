@@ -3,14 +3,13 @@
 /**
  * main - entry point
  *
- * Description: prints the size in byte that a data type occupies in the computer memory.
- * Return: 0.
+ * Return: 0 (Success)
  */
 int main(void)
 {
 	char c;
 	int i;
-	long li;
+	long int li;
 	long long ll;
 	float f;
 
