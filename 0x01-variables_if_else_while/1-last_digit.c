@@ -4,7 +4,7 @@
 
 /**
  * main - Entry point for program
- * Description - this program will check for positive numbers.
+ * Description - this program will check for positive number.
  * Return:0
  */
 int main(void)
@@ -24,7 +24,7 @@ int main(void)
 	}
 	else if (lastDigit < 6 && lastDigit != 0)
 	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastDigit);
+		printf("Last digit of %d is %d and is less than 6 and not 0", n, lastDigit);
 	}
 	return (0);
 }
