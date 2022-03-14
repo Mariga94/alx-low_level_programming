@@ -3,7 +3,6 @@
 /**
  * main - entry point
  *
- * Description: prints the size in byte that a data type occupies in the computer memory.
  * Return: 0.
  */
 int main(void)
