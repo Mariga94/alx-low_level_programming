@@ -1,3 +1,4 @@
+#include <main.h>
 
 /**
  * display - prints _putchar to stdout
