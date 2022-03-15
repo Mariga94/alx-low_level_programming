@@ -6,7 +6,7 @@
  * Return: on success 0.
  */
 
-char* display(void);
+char *display(void);
 
 int main(void)
 {
