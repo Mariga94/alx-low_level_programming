@@ -6,10 +6,10 @@
  * Return: on success 0.
  */
 
-char* display();
+char* display(void);
 
 int main(void)
 {
-	char* x = display();
+	display();
 	return (0);
 }
