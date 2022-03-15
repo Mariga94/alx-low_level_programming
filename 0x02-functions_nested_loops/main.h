@@ -1,9 +1,11 @@
+
+
 /**
  * display - prints _putchar to stdout
  *
  */
 
-int display(void)
+char* display(void)
 {
 	return ("_putchar\n");
 }
