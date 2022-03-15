@@ -1,17 +1,13 @@
 #include <main.h>
 
 /**
- * display - prints _putchar to stdout
+ * main - entry point for program
  *
- * Return: 0 Always (Success)
- *
+ * Return: on success 0.
  */
 
-/* function priting _putchar */
-
-int display(void)
+int main(void)
 {
-	return ("_putchar\n");
+	display();
 	return (0);
 }
-
