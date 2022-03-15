@@ -1,14 +1,12 @@
 #include "main.h"
 /**
- * main - entry point for program
+ * display - print putchar
  *
  * Return: on success 0.
  */
 
 char *display(void);
-
-int main(void)
 {
-	display();
-	return (0);
+	_putchar("putchar");
+	_putchar("\n");
 }
