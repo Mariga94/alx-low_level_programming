@@ -5,7 +5,7 @@
  * Return: on success 0.
  */
 
-int display(void);
+char *display(void);
 {
 	_putchar("putchar");
 	_putchar("\n");
