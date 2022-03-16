@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * times_table -  a program that prints the 9 times table
- * rone = row, cone = column, d = digits of current result
+ * i = row, j = column, d = digits of current result
  * Return: times table
  * add extra space past single digit
  */
