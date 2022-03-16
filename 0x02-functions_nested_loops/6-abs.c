@@ -9,10 +9,10 @@
 
 int abs(int x);
 
-int _abs(int)
+int _absi(int y)
 {
-	abs(int x);
-	return (x);
-	return (0);
+	abs(int y);
+	return (y);
+	
 }
 
