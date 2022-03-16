@@ -2,19 +2,21 @@
 
 /**
  * _islower - checks for lowercase character.
+ * islower - checks whether the passed character is a lowercase letter
+ * @a: the number to be checked
  *
- * Return: 1 if 'c' is lowercase
+ * Return: 1 if 'c' is lowercase. 0 Otherwise
  */
-
+int islower(int a);
 int _islower(int c)
 {
 	if (islower(c))
 	{
-		_putchar(1);
-	} 
-	else 
-	{
-		_putchar(0);
+		return (1);
 	}
-	_putchar('\n');
+	else
+	{
+		return (0);
+	}
+	return (0);
 }
