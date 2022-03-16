@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * display - print putchar
+ * main - Entry point
  *
  * Return: on success 0.
  */
 
-int display(void)
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
