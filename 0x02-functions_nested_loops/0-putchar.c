@@ -5,9 +5,8 @@
  * Return: on success 0.
  */
 
-char *display(void);
+char *display(void)
 {
-	_putchar("putchar");
-	_putchar("\n");
-	return (0);
+	_putchar("_putchar");
+	_putchar('\n');
 }
