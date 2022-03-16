@@ -15,7 +15,7 @@ int _isalpha(int c)
 	}
 	else 
 	{
-		__putchar('0');
+		_putchar('0');
 	}
 }
 
