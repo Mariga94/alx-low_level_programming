@@ -2,24 +2,22 @@
 
 /**
  * print_last_digit - returns last digit
- * @c:The number to be checked
+ * @i:The number to be checked
  *
  * Return: 0 Always
  */
 
-int print_last_digit(int c)
+int print_last_digit(int i)
 {
-	if (c >= 0)
-	{
-		_putchar (c % 10 + '0');
-		return (c % 10);
-	}
-	else
-	{
-		int i = c % 10 * -1;
+	int n;
 
-		_putchar(i);
-		return (i);
+	n = i % 10;
+
+	if (n < 0)
+	{
+		n = (-1 * n);
 	}
+
+	_putchar(n + '0');
+	return (n);
 }
-
