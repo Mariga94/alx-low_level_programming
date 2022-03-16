@@ -11,11 +11,11 @@ int _isalpha(int c)
 {
 	if (isalpha(c))
 	{
-		_printchar('1');
+		_putchar('1');
 	}
 	else 
 	{
-		__printchar('0');
+		__putchar('0');
 	}
 }
 
