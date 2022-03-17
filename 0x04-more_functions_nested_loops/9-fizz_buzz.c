@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * fizz_buzz - functions that check a number if its a fizz or buzz
@@ -7,31 +7,32 @@
  * Return: 0 Always
  */
 
-int fizz_buzz(int num)
+int main(void)
 {
-	int i = 0;
+	int i = 1;
 
-	while (i <= num)
+		while (i <= 100)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		{
-			_putchar("FizzBuzz");
+			printf("FizzBuzz ");
 		}
 		else if (i % 5 == 0)
 		{
-			_putchar("Buzz");
+			printf("Buzz ");
 		}
 		else if (i % 3 == 0)
 		{
-			_putchar("Buzz");
+			printf("Buzz ");
 		}
 		else
 		{
-			_putchar(i);
+			printf("%d ", i);
 		}
 		i++;
 	}
-	_putchar('\n');
+	printf("\n");
+	return (0);
 }
 
 
