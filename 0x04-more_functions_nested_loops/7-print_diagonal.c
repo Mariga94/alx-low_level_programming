@@ -9,20 +9,25 @@
 
 void print_diagonal(int n)
 {
-	let i = 0;
-
-	while (i <= n)
+	int i = 1;
+	int j = 1;
+	if (n <= 0)
 	{
-		if (n > 0)
-		{
-			_putchar('\');
-		}
-		else
-		{
-			putchar('\n');
-		}
-		i++;
+		_putchar('\n');
 	}
-	_putchar('\n');
+	else
+	{
+		while (i <= n)
+		{
+			while (j < i)
+			{
+				_putchar(' ');
+				j++;
+			}
+			_putchar('\\');
+			_putchar('\n');
+			i++;
+		}
+	}
 }
 
