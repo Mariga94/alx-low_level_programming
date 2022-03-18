@@ -2,19 +2,16 @@
 
 /**
  * positive_or_negative - tests if number is positive or negative
- * @i: number to be checked
- * 
+ *
  * Return: 0 
  */
 
-void positive_or_negative(int i)
+int main(void)
 {
-	if (i < 0 )
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+	int i;
+
+	i = 5;
+	positive_or_negative(i);
+
+	return (0);
 }
