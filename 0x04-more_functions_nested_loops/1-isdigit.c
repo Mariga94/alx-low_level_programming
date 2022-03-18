@@ -2,25 +2,20 @@
 
 /**
  * _isdigit - function check for a digit
- * @c: number to be looped
+ * @c: number to be checked
  *
  * Return: 1 if c is a digit. 0 otherwise
  */
 
 int _isdigit(int c)
 {
-	char i;
-
-	for (i = '0'; i <= '9'; i++)
+	if (c >= '0' && c <= '9')
 	{
-		if (i == c)
-		{
-			return (1);
-		}
-		else
-		{
-			return (0);
-		}
+		return (1);
+	}
+	else
+	{
+		return (0);
 	}
 	return (0);
 }
