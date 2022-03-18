@@ -9,20 +9,23 @@
 
 void print_square(int size)
 {
-	int i = 0;
-	int sqr = (size * size);
+	int a = 0;
+	int b = 0;
 
-	while (i < sqr)
+	if (size > 0)
 	{
-		if (i <= 0)
+		while (a < size)
 		{
-			_putchar('\n');
+			while (b < size)
+			{
+				_putchar('#');
+				b++;
+			}
+		b = 0;
+		a++;
+		_putchar('\n');
 		}
-		else if (i > 0)
-		{
-			_putchar('#');
-		}
-		i++;
 	}
-	_putchar('\n');
+	else
+		_putchar('\n');
 }
