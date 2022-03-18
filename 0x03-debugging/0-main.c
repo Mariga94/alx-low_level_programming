@@ -3,7 +3,7 @@
 /**
  * positive_or_negative - tests if number is positive or negative
  *
- * Return: 0
+ * Return: 0 Always
  */
 
 int main(void)
