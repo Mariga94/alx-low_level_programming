@@ -6,25 +6,22 @@
  *
  * Return: nothing
  */
-
 void rev_string(char *s)
 {
-	int i, start, end, length;
+        int i, start, end, length;
+        int rev_str;
 
-	i = 0;
-	while (s[i] != '\0')
-	{
-		length = i;
-		i++;
-	}
+        while (s[length] != '\0')
+        {
+                length++;
+        }
 
-	end =  length - 1;
+        end =  length - 1;
 
-	/*s[end] = '\0';*/
-
-	for (start = 0; start < length; start++)
-	{
-		s[end];
-		end--;
-	}
+        for (start = 0; start < length; start++)
+        {
+                rev_str = s[end];
+                end--;
+        }
 }
+
