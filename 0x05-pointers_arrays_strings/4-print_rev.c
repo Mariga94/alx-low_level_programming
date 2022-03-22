@@ -9,7 +9,7 @@
 
 void print_rev(char *s)
 {
-	int start, length, end;
+	int length, end;
 
 	length = 0;
 
@@ -20,10 +20,9 @@ void print_rev(char *s)
 
 	end = length - 1;
 
-	for (start = 0; start <= length; start++)
+	for (; end >= 0; end--)
 	{
 		_putchar(s[end]);
-		end--;
 	}
 
 	_putchar('\n');
