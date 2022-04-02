@@ -1,12 +1,13 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * main - Entry point
  * Return: 0 for Success
  */
 int main(int argc, char *argv[])
 {
-	_putchar(argv[0]);
-	_putchar('\n');
+	argc = 0;
+
+	printf("%s\n", argv[argc]);
 	return (0);
 }
