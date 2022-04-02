@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * _islower - checks for lowercase character.
  * islower - checks whether the passed character is a lowercase letter
@@ -123,26 +124,6 @@ int _isdigit(int c)
 		return (0);
 	}
 	return (0);
-}
-
-/**
- * _strlen - calculate length of s.
- * @s: string to be counted.
- *
- * Return: length of string.
- */
-
-int _strlen(char *s)
-{
-	int i;
-
-	i = 0;
-	while (*s != '\0')
-	{
-		i++;
-		s++;
-	}
-	return (i);
 }
 
 /**
