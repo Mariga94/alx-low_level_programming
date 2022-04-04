@@ -1,6 +1,11 @@
 #include <stdio.h>
+#include "main.h"
+
 /**
  * main - Entry point
+ * @argc: count of arguments supplied to the program
+ * @argv: array of pointers to the strings which are those arguments
+ *
  * Return: 0 for Success
  */
 int main(int argc, char *argv[])
