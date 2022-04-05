@@ -41,6 +41,5 @@ char *_strdup(char *str)
 		duplicate[i] = '\0';
 
 		return (duplicate);
-		free(duplicate);
 	}
 }
