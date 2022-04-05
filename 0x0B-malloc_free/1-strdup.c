@@ -11,13 +11,13 @@
 
 char *_strdup(char *str)
 {
+	char *duplicate;
+	int i, len;
+
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-
-	char *duplicate;
-	int i, len;
 
 	len = 0;
 	while (str[len] != '\0')
