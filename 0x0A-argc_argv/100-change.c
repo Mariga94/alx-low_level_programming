@@ -18,8 +18,7 @@ int main(int argc, char **b)
 		printf("Error\n");
 		return (1);
 	}
-	else
-	{
+
 	sum = atoi(*(b + 1));
 	while (sum >= 25)
 		sum -= 25, coins++;
