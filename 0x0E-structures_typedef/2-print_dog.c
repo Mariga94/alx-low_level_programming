@@ -3,7 +3,8 @@
 #include <stdio.h>
 
 /**
- * d - dog
+ * print_dog - print to std
+ * @d: dog struct
  * Return: nothing
  */
 
