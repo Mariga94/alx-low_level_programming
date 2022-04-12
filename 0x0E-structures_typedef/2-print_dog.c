@@ -20,20 +20,19 @@ void print_dog(struct dog *d)
 		{
 			d->name = "(nil)";
 			printf("Name: %s\n", d->name);
+		} 
+		else{
+			printf("Name: %s\n", d->name);
 		}
-		else if (d->age <= 0)
-		{
-			d->age = 0;
-			printf("Age: %.f\n", d->age);
-		}
-		else if (d->owner == NULL)
+		printf("Age: %.6f\n", d->age);
+		if (d->owner == NULL)
 		{
 			d->owner = "(nil)";
 			printf("Owner: %s\n", d->owner);
 		}
 		else
 		{
-			printf("Name: %s\nAge: %.f\nOwner: %s\n", d->name, d->age, d->owner);
+			printf("Owner: %s\n", d->owner);
 		}
 	}
 }
