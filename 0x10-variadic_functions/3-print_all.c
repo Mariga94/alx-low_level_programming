@@ -33,51 +33,44 @@ void chk_float(va_list list)
  * @list: the type
  * Return: nothing
  */
-void chk_string(va_list list)
-{
-	char *str;
-
-	str = va_arg(list, char *);
-	if (str == NULL)
-		str = "(nil)";
-
-	printf("%s", str);
-}
-/**
- * print_all - prints anything
- * @format: list of types of arguments passed to function
- * Return: nothing
- */
 void print_all(const char * const format, ...)
 {
-	check_t types[] = {
-		{"c", chk_char},
-		{"i", chk_int},
-		{"f", chk_float},
-		{"s", chk_string},
-		{NULL, NULL}
-	};
+	va_list valist;
+	int n = 0, i = 0;
+	char *sep = ", ";
+	char *str;
 
-	int x = 0, y = 0;
-	va_list list;
-	char *sep = "";
+	va_start(valist, format);
 
-	va_start(list, format);
+	while (format && format[i])
+		i++;
 
-	while (format && format[x])
+	while (format && format[n])
 	{
-		while (types[y].chk)
+		if (n  == (i - 1))
 		{
-			if (format[x] == *types[y].chk)
-			{
-				printf("%s", sep);
-				types[y].f(list);
-				sep = ", ";
-			}
-			y++;
+			sep = "";
 		}
-		y = 0;
-		x++;
+		switch (format[n])
+		{
+		case 'c':
+			printf("%c%s", va_arg(valist, int), sep);
+			break;
+		case 'i':
+			printf("%d%s", va_arg(valist, int), sep);
+			break;
+		case 'f':
+			printf("%f%s", va_arg(valist, double), sep);
+			break;
+		case 's':
+			str = va_arg(valist, char *);
+			if (str == NULL)
+				str = "(nil)";
+			printf("%s%s", str, sep);
+			break;
+		}
+		n++;
 	}
 	printf("\n");
+	va_end(valist);
 }
