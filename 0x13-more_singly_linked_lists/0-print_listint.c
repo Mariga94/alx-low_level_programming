@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
+#include <stddef.h>
 /**
  * print_listint - prints all the elements
  * @h: head of list
@@ -17,5 +18,4 @@ size_t print_listint(const listint_t *h)
 	}
 	return (counter);
 }
-
 
