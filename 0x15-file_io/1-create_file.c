@@ -1,4 +1,7 @@
 #include "main.h"
+#include <unistd.h>
+#include <fcntl.h>
+
 /**
  * create_file-function that creates a file
  * @filename: name of the file
