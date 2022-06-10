@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * deleteint_at_index - deletes node at index
+ * delete_dnodeint_at_index - deletes node at index
  * @head: double link list
  * @index: index to delete
  *
