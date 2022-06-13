@@ -1,6 +1,6 @@
-0x18. C - Dynamic libraries
+#0x18. C - Dynamic libraries
 
-Objectives
+##Objectives
 
 At the end of the project you are supposed to be in a position to:
 1. Create A  "C" Shared/ Dynamic Library 
