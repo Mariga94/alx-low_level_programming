@@ -1,4 +1,4 @@
-#include "main.h"
+#include "../main.h"
 
 /**
  * _strncat - concatenate n bytes src to dest

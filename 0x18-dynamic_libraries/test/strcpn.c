@@ -1,4 +1,4 @@
-#include "main.h"
+#include "../main.h"
 
 /**
  * _strspn - function that gets the length of a prefux substring
@@ -9,7 +9,7 @@
  * consist only of bytes from accept
  */
 
-int _strspn(char *str, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 
 }

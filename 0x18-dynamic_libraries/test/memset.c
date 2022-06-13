@@ -1,4 +1,4 @@
-#include "main.h"
+#include "../main.h"
 /**
  * _memset - function that fills a memory with a constant byte
  * @s: pointer to buffer
@@ -7,7 +7,7 @@
  * Return: a pointer to the memory area s
  */
 
-char *_memset(char *s, char b, int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 
 }
