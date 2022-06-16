@@ -29,4 +29,8 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index);
 int sum_dlistint(dlistint_t *head);
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n);
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);
+listint_t *reverse_listint(listint_t **head);
+size_t print_listint_safe(const listint_t *head);
+size_t free_listint_safe(listint_t **h);
+listint_t *find_listint_loop(listint_t *head);
 #endif
