@@ -6,46 +6,46 @@ size_t free_listint_safe(listint_t **h);
 /**
  * looped_listint_count - Counts the number of unique nodes
  *                      in a looped listint_t linked list.
- * @head: A pointer to the head of the listint_t to check.
+ * @head: pointer to the head of the listint_t to check.
  *
  * Return: If the list is not looped - 0.
  *         Otherwise - the number of unique nodes in the list.
  */
 size_t looped_listint_count(listint_t *head)
 {
-	listint_t *tortoise, *hare;
+	listint_t *a *b;
 	size_t nodes = 1;
 
 	if (head == NULL || head->next == NULL)
 		return (0);
 
-	tortoise = head->next;
-	hare = (head->next)->next;
+	a = head->next;
+	b = (head->next)->next;
 
-	while (hare)
+	while (b)
 	{
-		if (tortoise == hare)
+		if (a == b)
 		{
-			tortoise = head;
-			while (tortoise != hare)
+			a = head;
+			while (a != b)
 			{
 				nodes++;
-				tortoise = tortoise->next;
-				hare = hare->next;
+				a = a->next;
+				b = b->next;
 			}
 
-			tortoise = tortoise->next;
-			while (tortoise != hare)
+			a = a->next;
+			while (a != b)
 			{
 				nodes++;
-				tortoise = tortoise->next;
+				a = b->next;
 			}
 
 			return (nodes);
 		}
 
-		tortoise = tortoise->next;
-		hare = (hare->next)->next;
+		a = a->next;
+		b = (b->next)->next;
 	}
 
 	return (0);
