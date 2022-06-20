@@ -10,7 +10,7 @@
 
 int main(int argc, char **argv)
 {
-	int fd;
+	FILE *fd = NULL;
 	char c;
 
 	if (argc != 2)
@@ -21,11 +21,15 @@ int main(int argc, char **argv)
 	{
 		fd = open(argv[1], O_RDONLY, 0);
 		
-		if (fd == -1)
+		if (fd == NULL)
 		{
 			return (open_file_error(argv[1]));
 		}
 
+		/*Execute bytecode*/
+		execute_monty(fd);
+
+		/*close file*/
 		close(fd);
 		return (EXIT_SUCCESS);
 	}
