@@ -9,7 +9,7 @@ void print_binary(unsigned long int n)
 {
 	int i;
 
-	for (i = 1 << 31; i > 0; i >>= 1)
+	for (i = 1 << 31; i > 0; i = i / 2)
 	{
-		printf("%u", !!(n & i));
+		(n & i) ? printf("1") : printf("0");
 	}
